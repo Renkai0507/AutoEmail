@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoEmail", "AutoEmail\AutoEmail.csproj", "{17D01297-5501-459F-A1FB-C2A50178A97A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My", "My\My.csproj", "{9A7E4073-14C7-48BB-BE9E-D4F840FE57E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunnyUI", "SunnyUI\SunnyUI.csproj", "{AB1CB247-E20B-4CBE-B269-570ADDD96C53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17D01297-5501-459F-A1FB-C2A50178A97A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17D01297-5501-459F-A1FB-C2A50178A97A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17D01297-5501-459F-A1FB-C2A50178A97A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17D01297-5501-459F-A1FB-C2A50178A97A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A7E4073-14C7-48BB-BE9E-D4F840FE57E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A7E4073-14C7-48BB-BE9E-D4F840FE57E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A7E4073-14C7-48BB-BE9E-D4F840FE57E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A7E4073-14C7-48BB-BE9E-D4F840FE57E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB1CB247-E20B-4CBE-B269-570ADDD96C53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB1CB247-E20B-4CBE-B269-570ADDD96C53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB1CB247-E20B-4CBE-B269-570ADDD96C53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB1CB247-E20B-4CBE-B269-570ADDD96C53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {112BC959-C2A4-4DC8-85F2-74E5270C2978}
+	EndGlobalSection
+EndGlobal

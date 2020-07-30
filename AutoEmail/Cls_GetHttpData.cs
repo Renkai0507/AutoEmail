@@ -1,18 +1,18 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Net.Http;
 using System.Text;
-using System.Threading.Tasks;
+
 
 namespace AutoEmail
 {
-    class HttpHelper
+     static class Cls_GetHttpData
     {
-        #region 推荐的模拟POST请求,需要.net4.5,并引用System.Net.Http.dll;
-        public static string HttpGet(string Url, string postDataStr)
+        public static DataTable HttpGet(string Url, string postDataStr)
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(Url + (postDataStr == "" ? "" : "?") + postDataStr);
             request.Method = "GET";
@@ -24,12 +24,13 @@ namespace AutoEmail
             string retString = myStreamReader.ReadToEnd();
             myStreamReader.Close();
             myResponseStream.Close();
+            
 
-            return retString;
+            return JsonConvert.DeserializeObject<DataTable>(retString);
+            
         }
-        #endregion
-
-
+       
 
     }
+    
 }

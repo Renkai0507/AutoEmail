@@ -109,6 +109,8 @@ namespace My
         #endregion
 
 
+       
+
         #region ***系統開發環境設定
 
         //***系統開發環境設定
@@ -116,7 +118,7 @@ namespace My
         public int MaxUserNameLength = 20;                //最大使用者名稱長度
 
         public const string GlobalSystemName = "SIS";
-        public const string GlobalSystemTitle = "超級進銷存系統 Super Invoicing System";
+        public const string GlobalSystemTitle = "Auto Email system";
         public const string GlobalSystemVersion = "V1.0";
         public const string GlobalUseLocale = "zh-tw";//預設語系      
         public const string GlobalDefaultLanguage = "C Sharp .NET 5.0"; //記錄系統使用何種程式語言開發

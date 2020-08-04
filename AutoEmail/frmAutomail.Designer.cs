@@ -1,6 +1,6 @@
 ﻿namespace AutoEmail
 {
-    partial class Form1
+    partial class frmAutomail
     {
         /// <summary>
         /// 設計工具所需的變數。
@@ -55,6 +55,8 @@
             this.uiLabel6 = new Sunny.UI.UILabel();
             this.TB_ask_product = new Sunny.UI.UIRichTextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.uiContextMenuStrip1 = new Sunny.UI.UIContextMenuStrip();
+            this.uiContextMenuStrip2 = new Sunny.UI.UIContextMenuStrip();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_commail)).BeginInit();
             this.uiGroupBox1.SuspendLayout();
             this.uiGroupBox2.SuspendLayout();
@@ -119,7 +121,7 @@
             this.uiGroupBox1.Controls.Add(this.uiLabel2);
             this.uiGroupBox1.Controls.Add(this.uiLabel1);
             this.uiGroupBox1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiGroupBox1.Location = new System.Drawing.Point(16, 14);
+            this.uiGroupBox1.Location = new System.Drawing.Point(8, 10);
             this.uiGroupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiGroupBox1.Name = "uiGroupBox1";
             this.uiGroupBox1.Padding = new System.Windows.Forms.Padding(0, 32, 0, 0);
@@ -263,7 +265,7 @@
             // 
             this.uiGroupBox2.Controls.Add(this.dgv_commail);
             this.uiGroupBox2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiGroupBox2.Location = new System.Drawing.Point(17, 174);
+            this.uiGroupBox2.Location = new System.Drawing.Point(12, 170);
             this.uiGroupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiGroupBox2.Name = "uiGroupBox2";
             this.uiGroupBox2.Padding = new System.Windows.Forms.Padding(0, 32, 0, 0);
@@ -291,7 +293,7 @@
             this.uiGroupBox3.Controls.Add(this.TB_ask_product);
             this.uiGroupBox3.Controls.Add(this.TB_mailbody);
             this.uiGroupBox3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiGroupBox3.Location = new System.Drawing.Point(733, 14);
+            this.uiGroupBox3.Location = new System.Drawing.Point(725, 10);
             this.uiGroupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiGroupBox3.Name = "uiGroupBox3";
             this.uiGroupBox3.Padding = new System.Windows.Forms.Padding(0, 32, 0, 0);
@@ -387,17 +389,30 @@
             this.TB_ask_product.Size = new System.Drawing.Size(231, 49);
             this.TB_ask_product.TabIndex = 8;
             // 
-            // Form1
+            // uiContextMenuStrip1
+            // 
+            this.uiContextMenuStrip1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiContextMenuStrip1.Name = "uiContextMenuStrip1";
+            this.uiContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // uiContextMenuStrip2
+            // 
+            this.uiContextMenuStrip2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiContextMenuStrip2.Name = "uiContextMenuStrip2";
+            this.uiContextMenuStrip2.Size = new System.Drawing.Size(61, 4);
+            // 
+            // frmAutomail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1431, 996);
+            this.ClientSize = new System.Drawing.Size(1421, 754);
             this.Controls.Add(this.uiGroupBox3);
             this.Controls.Add(this.uiGroupBox2);
             this.Controls.Add(this.uiGroupBox1);
-            this.Name = "Form1";
+            this.Name = "frmAutomail";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAutomail_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_commail)).EndInit();
             this.uiGroupBox1.ResumeLayout(false);
             this.uiGroupBox1.PerformLayout();
@@ -434,6 +449,8 @@
         private Sunny.UI.UIComboBox CB_product_type;
         private Sunny.UI.UILabel uiLabel7;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private Sunny.UI.UIContextMenuStrip uiContextMenuStrip1;
+        private Sunny.UI.UIContextMenuStrip uiContextMenuStrip2;
     }
 }
 

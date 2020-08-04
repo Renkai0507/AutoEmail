@@ -146,10 +146,21 @@ namespace My
         /// <param name="FileName">檔案名稱</param>
         public static void WriteContentToFile(string FileContent, string FileName)
         {
-            FileStream fs = new FileStream(FileName, FileMode.OpenOrCreate, FileAccess.Write);
-            StreamWriter sw = new StreamWriter(fs, Encoding.Unicode);
-            sw.WriteLine(FileContent);
-            sw.Close();
+            try
+            {
+                FileStream fs = new FileStream(FileName, FileMode.OpenOrCreate, FileAccess.Write);
+
+                StreamWriter sw = new StreamWriter(fs, Encoding.Unicode);
+                sw.WriteLine(FileContent);
+                sw.Close();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+          
+
+          
         }
 
         #endregion
@@ -183,16 +194,17 @@ namespace My
         {
             string bufstr = "";
             FileStream fs = new FileStream(FileName, FileMode.OpenOrCreate, FileAccess.Read);
-            StreamReader sr = new StreamReader(fs, Encoding.Unicode);
-            sr.BaseStream.Seek(0, SeekOrigin.Begin);
+            StreamReader sr = new StreamReader(fs, Encoding.UTF8);
+            //sr.BaseStream.Seek(0, SeekOrigin.Begin);
 
-            while (sr.Peek() > -1)
-            {
-                bufstr += sr.Read().ToString();
-            }
+            //while (sr.Peek() > -1)
+            //{
+            //    bufstr += sr.Read().ToString();
+            //}
             sr.Close();
+            fs.Close ();
+            bufstr= File.ReadAllText(FileName,Encoding.UTF8);
             return bufstr;
-
         }
 
         #endregion

@@ -99,7 +99,7 @@ namespace My
 
             if (file1.Exists == false)
             {
-                file1.Create();
+                file1.Create();                
                 return true;
             }
             else
@@ -172,7 +172,17 @@ namespace My
 
             if (file1.Exists == true)
             {
-                file1.Delete();
+                try
+                {
+                    file1.Delete();
+                }
+                catch (Exception ex)
+                {
+
+                    throw;
+                }
+                
+
                 return true;
             }
             else

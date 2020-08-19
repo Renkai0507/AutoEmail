@@ -33,7 +33,8 @@ namespace AutoEmail
                 Mail_Config.MailPassword = myINI.getKeyValue("SendMailConfig", "MailPassword");
                 Mail_Config.SmtpServer = myINI.getKeyValue("SendMailConfig", "SmtpServer");
                 Mail_Config.SmtpPort = Convert.ToInt32(myINI.getKeyValue("SendMailConfig", "SmtpPort"));
-
+                Mail_Config.Bodypath = System.Windows.Forms.Application.StartupPath +
+                    myINI.getKeyValue("SendMailConfig","Bodypath");
                 ///
                 ///信件內容載入List<string>
                 ///List第一 第三位置是日期和產品

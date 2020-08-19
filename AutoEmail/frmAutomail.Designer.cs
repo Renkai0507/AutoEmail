@@ -32,7 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dgv_commail = new Sunny.UI.UIDataGridView();
             this.uiGroupBox1 = new Sunny.UI.UIGroupBox();
             this.CB_product_type = new Sunny.UI.UIComboBox();
             this.uiLabel7 = new Sunny.UI.UILabel();
@@ -45,8 +44,15 @@
             this.uiLabel2 = new Sunny.UI.UILabel();
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.uiGroupBox2 = new Sunny.UI.UIGroupBox();
-            this.TB_mailbody = new Sunny.UI.UIRichTextBox();
+            this.dgv_commail = new Sunny.UI.UIDataGridView();
             this.uiGroupBox3 = new Sunny.UI.UIGroupBox();
+            this.uiLabel8 = new Sunny.UI.UILabel();
+            this.Btn_change = new Sunny.UI.UIButton();
+            this.TB_filepath = new Sunny.UI.UIRichTextBox();
+            this.uiButton1 = new Sunny.UI.UIButton();
+            this.uiLabel9 = new Sunny.UI.UILabel();
+            this.TB_title = new Sunny.UI.UIRichTextBox();
+            this.webView = new System.Windows.Forms.WebBrowser();
             this.uiGroupBox4 = new Sunny.UI.UIGroupBox();
             this.uiLabel4 = new Sunny.UI.UILabel();
             this.TB_askinfo = new Sunny.UI.UIRichTextBox();
@@ -54,62 +60,20 @@
             this.TB_product_type = new Sunny.UI.UIRichTextBox();
             this.uiLabel6 = new Sunny.UI.UILabel();
             this.TB_ask_product = new Sunny.UI.UIRichTextBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.bgw = new System.ComponentModel.BackgroundWorker();
             this.uiContextMenuStrip1 = new Sunny.UI.UIContextMenuStrip();
             this.uiContextMenuStrip2 = new Sunny.UI.UIContextMenuStrip();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_commail)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
             this.uiGroupBox1.SuspendLayout();
             this.uiGroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_commail)).BeginInit();
             this.uiGroupBox3.SuspendLayout();
             this.uiGroupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgv_commail
-            // 
-            this.dgv_commail.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.dgv_commail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv_commail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_commail.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.dgv_commail.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgv_commail.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_commail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_commail.ColumnHeadersHeight = 32;
-            this.dgv_commail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_commail.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv_commail.EnableHeadersVisualStyles = false;
-            this.dgv_commail.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.dgv_commail.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            this.dgv_commail.Location = new System.Drawing.Point(16, 41);
-            this.dgv_commail.Name = "dgv_commail";
-            this.dgv_commail.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            this.dgv_commail.RowHeadersVisible = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgv_commail.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgv_commail.RowTemplate.Height = 29;
-            this.dgv_commail.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgv_commail.SelectedIndex = -1;
-            this.dgv_commail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_commail.Size = new System.Drawing.Size(682, 502);
-            this.dgv_commail.TabIndex = 3;
-            this.dgv_commail.TagString = null;
-            // 
             // uiGroupBox1
             // 
+            this.uiGroupBox1.Controls.Add(this.label1);
             this.uiGroupBox1.Controls.Add(this.CB_product_type);
             this.uiGroupBox1.Controls.Add(this.uiLabel7);
             this.uiGroupBox1.Controls.Add(this.CB_situation);
@@ -178,6 +142,7 @@
             this.Btn_send_mail.Size = new System.Drawing.Size(150, 64);
             this.Btn_send_mail.TabIndex = 7;
             this.Btn_send_mail.Text = "寄出";
+            this.Btn_send_mail.Click += new System.EventHandler(this.Btn_send_mail_Click);
             // 
             // uiLabel3
             // 
@@ -274,24 +239,63 @@
             this.uiGroupBox2.TabIndex = 5;
             this.uiGroupBox2.Text = "寄出資料";
             // 
-            // TB_mailbody
+            // dgv_commail
             // 
-            this.TB_mailbody.AutoWordSelection = true;
-            this.TB_mailbody.FillColor = System.Drawing.Color.White;
-            this.TB_mailbody.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.TB_mailbody.Location = new System.Drawing.Point(4, 174);
-            this.TB_mailbody.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.TB_mailbody.Name = "TB_mailbody";
-            this.TB_mailbody.Padding = new System.Windows.Forms.Padding(2);
-            this.TB_mailbody.Size = new System.Drawing.Size(677, 534);
-            this.TB_mailbody.TabIndex = 6;
+            this.dgv_commail.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.dgv_commail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_commail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_commail.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.dgv_commail.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgv_commail.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_commail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_commail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_commail.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgv_commail.EnableHeadersVisualStyles = false;
+            this.dgv_commail.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.dgv_commail.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
+            this.dgv_commail.Location = new System.Drawing.Point(3, 26);
+            this.dgv_commail.Name = "dgv_commail";
+            this.dgv_commail.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
+            this.dgv_commail.RowHeadersVisible = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgv_commail.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgv_commail.RowTemplate.Height = 29;
+            this.dgv_commail.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dgv_commail.SelectedIndex = -1;
+            this.dgv_commail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_commail.Size = new System.Drawing.Size(702, 533);
+            this.dgv_commail.TabIndex = 5;
+            this.dgv_commail.TagString = null;
+            this.dgv_commail.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_commail_CellContentClick);
+            this.dgv_commail.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgv_commail_KeyDown);
             // 
             // uiGroupBox3
             // 
+            this.uiGroupBox3.Controls.Add(this.uiLabel8);
+            this.uiGroupBox3.Controls.Add(this.Btn_change);
+            this.uiGroupBox3.Controls.Add(this.TB_filepath);
+            this.uiGroupBox3.Controls.Add(this.uiButton1);
+            this.uiGroupBox3.Controls.Add(this.uiLabel9);
+            this.uiGroupBox3.Controls.Add(this.TB_title);
+            this.uiGroupBox3.Controls.Add(this.webView);
             this.uiGroupBox3.Controls.Add(this.uiGroupBox4);
             this.uiGroupBox3.Controls.Add(this.uiLabel6);
             this.uiGroupBox3.Controls.Add(this.TB_ask_product);
-            this.uiGroupBox3.Controls.Add(this.TB_mailbody);
             this.uiGroupBox3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.uiGroupBox3.Location = new System.Drawing.Point(725, 10);
             this.uiGroupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -301,6 +305,86 @@
             this.uiGroupBox3.Size = new System.Drawing.Size(685, 722);
             this.uiGroupBox3.TabIndex = 8;
             this.uiGroupBox3.Text = "寄出內容";
+            // 
+            // uiLabel8
+            // 
+            this.uiLabel8.AutoSize = true;
+            this.uiLabel8.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiLabel8.Location = new System.Drawing.Point(356, 123);
+            this.uiLabel8.Name = "uiLabel8";
+            this.uiLabel8.Size = new System.Drawing.Size(42, 21);
+            this.uiLabel8.TabIndex = 12;
+            this.uiLabel8.Text = "附件";
+            this.uiLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Btn_change
+            // 
+            this.Btn_change.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_change.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.Btn_change.Location = new System.Drawing.Point(288, 121);
+            this.Btn_change.Name = "Btn_change";
+            this.Btn_change.Size = new System.Drawing.Size(57, 27);
+            this.Btn_change.TabIndex = 17;
+            this.Btn_change.Text = "修改";
+            this.Btn_change.Click += new System.EventHandler(this.uiButton2_Click);
+            // 
+            // TB_filepath
+            // 
+            this.TB_filepath.AutoWordSelection = true;
+            this.TB_filepath.FillColor = System.Drawing.Color.White;
+            this.TB_filepath.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.TB_filepath.Location = new System.Drawing.Point(407, 115);
+            this.TB_filepath.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TB_filepath.Name = "TB_filepath";
+            this.TB_filepath.Padding = new System.Windows.Forms.Padding(2);
+            this.TB_filepath.Radius = 15;
+            this.TB_filepath.Size = new System.Drawing.Size(208, 37);
+            this.TB_filepath.TabIndex = 9;
+            // 
+            // uiButton1
+            // 
+            this.uiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiButton1.Location = new System.Drawing.Point(619, 121);
+            this.uiButton1.Name = "uiButton1";
+            this.uiButton1.Size = new System.Drawing.Size(57, 27);
+            this.uiButton1.TabIndex = 12;
+            this.uiButton1.Text = "查詢";
+            this.uiButton1.Click += new System.EventHandler(this.uiButton1_Click);
+            // 
+            // uiLabel9
+            // 
+            this.uiLabel9.AutoSize = true;
+            this.uiLabel9.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiLabel9.Location = new System.Drawing.Point(16, 160);
+            this.uiLabel9.Name = "uiLabel9";
+            this.uiLabel9.Size = new System.Drawing.Size(74, 21);
+            this.uiLabel9.TabIndex = 16;
+            this.uiLabel9.Text = "信件標頭";
+            this.uiLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // TB_title
+            // 
+            this.TB_title.AutoWordSelection = true;
+            this.TB_title.FillColor = System.Drawing.Color.White;
+            this.TB_title.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.TB_title.Location = new System.Drawing.Point(98, 156);
+            this.TB_title.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TB_title.Name = "TB_title";
+            this.TB_title.Padding = new System.Windows.Forms.Padding(2);
+            this.TB_title.Radius = 15;
+            this.TB_title.Size = new System.Drawing.Size(560, 57);
+            this.TB_title.TabIndex = 9;
+            // 
+            // webView
+            // 
+            this.webView.CausesValidation = false;
+            this.webView.Location = new System.Drawing.Point(14, 221);
+            this.webView.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webView.Name = "webView";
+            this.webView.Size = new System.Drawing.Size(668, 482);
+            this.webView.TabIndex = 14;
+            this.webView.Url = new System.Uri("", System.UriKind.Relative);
             // 
             // uiGroupBox4
             // 
@@ -362,7 +446,7 @@
             this.TB_product_type.Name = "TB_product_type";
             this.TB_product_type.Padding = new System.Windows.Forms.Padding(2);
             this.TB_product_type.Radius = 15;
-            this.TB_product_type.Size = new System.Drawing.Size(235, 44);
+            this.TB_product_type.Size = new System.Drawing.Size(231, 44);
             this.TB_product_type.TabIndex = 8;
             // 
             // uiLabel6
@@ -381,13 +465,21 @@
             this.TB_ask_product.AutoWordSelection = true;
             this.TB_ask_product.FillColor = System.Drawing.Color.White;
             this.TB_ask_product.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.TB_ask_product.Location = new System.Drawing.Point(98, 115);
+            this.TB_ask_product.Location = new System.Drawing.Point(98, 120);
             this.TB_ask_product.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_ask_product.Name = "TB_ask_product";
             this.TB_ask_product.Padding = new System.Windows.Forms.Padding(2);
             this.TB_ask_product.Radius = 15;
-            this.TB_ask_product.Size = new System.Drawing.Size(231, 49);
+            this.TB_ask_product.Size = new System.Drawing.Size(183, 32);
             this.TB_ask_product.TabIndex = 8;
+            this.TB_ask_product.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_ask_product_KeyDown);
+            // 
+            // bgw
+            // 
+            this.bgw.WorkerReportsProgress = true;
+            this.bgw.WorkerSupportsCancellation = true;
+            this.bgw.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgw_DoWork);
+            this.bgw.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.CompleteWork);
             // 
             // uiContextMenuStrip1
             // 
@@ -401,6 +493,15 @@
             this.uiContextMenuStrip2.Name = "uiContextMenuStrip2";
             this.uiContextMenuStrip2.Size = new System.Drawing.Size(61, 4);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(651, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(19, 21);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "0";
+            // 
             // frmAutomail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -413,10 +514,10 @@
             this.Name = "frmAutomail";
             this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAutomail_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_commail)).EndInit();
             this.uiGroupBox1.ResumeLayout(false);
             this.uiGroupBox1.PerformLayout();
             this.uiGroupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_commail)).EndInit();
             this.uiGroupBox3.ResumeLayout(false);
             this.uiGroupBox3.PerformLayout();
             this.uiGroupBox4.ResumeLayout(false);
@@ -426,7 +527,6 @@
         }
 
         #endregion
-        private Sunny.UI.UIDataGridView dgv_commail;
         private Sunny.UI.UIGroupBox uiGroupBox1;
         private Sunny.UI.UIGroupBox uiGroupBox2;
         private Sunny.UI.UIDatePicker dtp_end;
@@ -434,7 +534,6 @@
         private Sunny.UI.UILabel uiLabel2;
         private Sunny.UI.UILabel uiLabel1;
         private Sunny.UI.UIButton Btn_sendget;
-        private Sunny.UI.UIRichTextBox TB_mailbody;
         private Sunny.UI.UIComboBox CB_situation;
         private Sunny.UI.UIButton Btn_send_mail;
         private Sunny.UI.UILabel uiLabel3;
@@ -448,9 +547,18 @@
         private Sunny.UI.UIRichTextBox TB_ask_product;
         private Sunny.UI.UIComboBox CB_product_type;
         private Sunny.UI.UILabel uiLabel7;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.ComponentModel.BackgroundWorker bgw;
         private Sunny.UI.UIContextMenuStrip uiContextMenuStrip1;
         private Sunny.UI.UIContextMenuStrip uiContextMenuStrip2;
+        public System.Windows.Forms.WebBrowser webView;
+        private Sunny.UI.UILabel uiLabel9;
+        private Sunny.UI.UIRichTextBox TB_title;
+        private Sunny.UI.UIRichTextBox TB_filepath;
+        private Sunny.UI.UIButton uiButton1;
+        private Sunny.UI.UIDataGridView dgv_commail;
+        private Sunny.UI.UILabel uiLabel8;
+        private Sunny.UI.UIButton Btn_change;
+        private System.Windows.Forms.Label label1;
     }
 }
 

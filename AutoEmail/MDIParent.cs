@@ -65,7 +65,7 @@ namespace AutoEmail
                 Mail_Config.Meteorological = myINI.getKeyValue("Product_EDM", "Meteorological");
                 Mail_Config.Water = myINI.getKeyValue("Product_EDM", "Water");
                 Mail_Config.Liquid = myINI.getKeyValue("Product_EDM", "Liquid");
-                Mail_Config.Tap = myINI.getKeyValue("Product_EDM", "Tap");
+                Mail_Config.Sticker = myINI.getKeyValue("Product_EDM", "Tap");
                 Mail_Config.TempControl = myINI.getKeyValue("Product_EDM", "TempControl");
                 Mail_Config.TCband = myINI.getKeyValue("Product_EDM", "TCband");
                 Mail_Config.Wireless = myINI.getKeyValue("Product_EDM", "Wireless");

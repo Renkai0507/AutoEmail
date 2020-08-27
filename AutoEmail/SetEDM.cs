@@ -41,7 +41,7 @@ namespace AutoEmail
             TB_Meteorological.Text = Mail_Config.Meteorological;
             TB_Water.Text = Mail_Config.Water;
             TB_Liquid.Text = Mail_Config.Liquid;
-            TB_Tap.Text = Mail_Config.Tap;
+            TB_Tap.Text = Mail_Config.Sticker;
             TB_TempControl.Text = Mail_Config.TempControl;
             TB_TCband.Text = Mail_Config.TCband;
             TB_Wireless.Text = Mail_Config.Wireless;
@@ -187,7 +187,7 @@ namespace AutoEmail
             myINI.setKeyValue("Product_EDM", "Liquid", TB_Liquid.Text);
             Mail_Config.Liquid = TB_Liquid.Text;
             myINI.setKeyValue("Product_EDM", "Tap", TB_Tap.Text);
-            Mail_Config.Tap = TB_Tap.Text;
+            Mail_Config.Sticker = TB_Tap.Text;
             myINI.setKeyValue("Product_EDM", "TempControl", TB_TempControl.Text);
             Mail_Config.TempControl = TB_TempControl.Text;
             myINI.setKeyValue("Product_EDM", "TCband", TB_TCband.Text);

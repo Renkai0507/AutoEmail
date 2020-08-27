@@ -222,7 +222,7 @@
             // 
             this.uiLabel32.AutoSize = true;
             this.uiLabel32.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel32.Location = new System.Drawing.Point(376, 81);
+            this.uiLabel32.Location = new System.Drawing.Point(375, 125);
             this.uiLabel32.Name = "uiLabel32";
             this.uiLabel32.Size = new System.Drawing.Size(42, 21);
             this.uiLabel32.Style = Sunny.UI.UIStyle.Custom;
@@ -234,7 +234,7 @@
             // 
             this.uiLabel19.AutoSize = true;
             this.uiLabel19.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel19.Location = new System.Drawing.Point(376, 27);
+            this.uiLabel19.Location = new System.Drawing.Point(376, 76);
             this.uiLabel19.Name = "uiLabel19";
             this.uiLabel19.Size = new System.Drawing.Size(42, 21);
             this.uiLabel19.TabIndex = 104;
@@ -245,7 +245,7 @@
             // 
             this.uiLabel34.AutoSize = true;
             this.uiLabel34.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel34.Location = new System.Drawing.Point(714, 172);
+            this.uiLabel34.Location = new System.Drawing.Point(717, 224);
             this.uiLabel34.Name = "uiLabel34";
             this.uiLabel34.Size = new System.Drawing.Size(42, 21);
             this.uiLabel34.Style = Sunny.UI.UIStyle.Custom;
@@ -257,7 +257,7 @@
             // 
             this.uiLabel33.AutoSize = true;
             this.uiLabel33.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel33.Location = new System.Drawing.Point(714, 217);
+            this.uiLabel33.Location = new System.Drawing.Point(717, 269);
             this.uiLabel33.Name = "uiLabel33";
             this.uiLabel33.Size = new System.Drawing.Size(42, 21);
             this.uiLabel33.TabIndex = 100;
@@ -269,7 +269,7 @@
             this.TB_Other.AutoWordSelection = true;
             this.TB_Other.FillColor = System.Drawing.Color.White;
             this.TB_Other.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.TB_Other.Location = new System.Drawing.Point(857, 168);
+            this.TB_Other.Location = new System.Drawing.Point(860, 220);
             this.TB_Other.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_Other.Name = "TB_Other";
             this.TB_Other.Padding = new System.Windows.Forms.Padding(2);
@@ -282,7 +282,7 @@
             // 
             this.BT_Other.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_Other.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.BT_Other.Location = new System.Drawing.Point(793, 172);
+            this.BT_Other.Location = new System.Drawing.Point(796, 224);
             this.BT_Other.Name = "BT_Other";
             this.BT_Other.Size = new System.Drawing.Size(57, 27);
             this.BT_Other.Style = Sunny.UI.UIStyle.Custom;
@@ -295,7 +295,7 @@
             this.TB_Food.AutoWordSelection = true;
             this.TB_Food.FillColor = System.Drawing.Color.White;
             this.TB_Food.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.TB_Food.Location = new System.Drawing.Point(855, 211);
+            this.TB_Food.Location = new System.Drawing.Point(858, 263);
             this.TB_Food.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_Food.Name = "TB_Food";
             this.TB_Food.Padding = new System.Windows.Forms.Padding(2);
@@ -308,7 +308,7 @@
             // 
             this.BT_Food.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_Food.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.BT_Food.Location = new System.Drawing.Point(793, 217);
+            this.BT_Food.Location = new System.Drawing.Point(796, 269);
             this.BT_Food.Name = "BT_Food";
             this.BT_Food.Size = new System.Drawing.Size(57, 27);
             this.BT_Food.Style = Sunny.UI.UIStyle.Custom;
@@ -321,7 +321,7 @@
             this.TB_SourceControl.AutoWordSelection = true;
             this.TB_SourceControl.FillColor = System.Drawing.Color.White;
             this.TB_SourceControl.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.TB_SourceControl.Location = new System.Drawing.Point(858, 121);
+            this.TB_SourceControl.Location = new System.Drawing.Point(861, 173);
             this.TB_SourceControl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_SourceControl.Name = "TB_SourceControl";
             this.TB_SourceControl.Padding = new System.Windows.Forms.Padding(2);
@@ -335,7 +335,7 @@
             this.TB_Liquid.AutoWordSelection = true;
             this.TB_Liquid.FillColor = System.Drawing.Color.White;
             this.TB_Liquid.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.TB_Liquid.Location = new System.Drawing.Point(858, 24);
+            this.TB_Liquid.Location = new System.Drawing.Point(861, 76);
             this.TB_Liquid.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_Liquid.Name = "TB_Liquid";
             this.TB_Liquid.Padding = new System.Windows.Forms.Padding(2);
@@ -348,7 +348,7 @@
             // 
             this.BT_SourceControl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_SourceControl.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.BT_SourceControl.Location = new System.Drawing.Point(793, 128);
+            this.BT_SourceControl.Location = new System.Drawing.Point(796, 180);
             this.BT_SourceControl.Name = "BT_SourceControl";
             this.BT_SourceControl.Size = new System.Drawing.Size(57, 27);
             this.BT_SourceControl.Style = Sunny.UI.UIStyle.Custom;
@@ -360,7 +360,7 @@
             // 
             this.BT_Liquid.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_Liquid.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.BT_Liquid.Location = new System.Drawing.Point(793, 30);
+            this.BT_Liquid.Location = new System.Drawing.Point(796, 82);
             this.BT_Liquid.Name = "BT_Liquid";
             this.BT_Liquid.Size = new System.Drawing.Size(57, 27);
             this.BT_Liquid.TabIndex = 78;
@@ -371,7 +371,7 @@
             // 
             this.uiLabel26.AutoSize = true;
             this.uiLabel26.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel26.Location = new System.Drawing.Point(713, 130);
+            this.uiLabel26.Location = new System.Drawing.Point(716, 182);
             this.uiLabel26.Name = "uiLabel26";
             this.uiLabel26.Size = new System.Drawing.Size(74, 21);
             this.uiLabel26.Style = Sunny.UI.UIStyle.Custom;
@@ -383,7 +383,7 @@
             // 
             this.uiLabel25.AutoSize = true;
             this.uiLabel25.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel25.Location = new System.Drawing.Point(714, 31);
+            this.uiLabel25.Location = new System.Drawing.Point(717, 83);
             this.uiLabel25.Name = "uiLabel25";
             this.uiLabel25.Size = new System.Drawing.Size(42, 21);
             this.uiLabel25.TabIndex = 79;
@@ -395,7 +395,7 @@
             this.TB_Compiler.AutoWordSelection = true;
             this.TB_Compiler.FillColor = System.Drawing.Color.White;
             this.TB_Compiler.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.TB_Compiler.Location = new System.Drawing.Point(858, 71);
+            this.TB_Compiler.Location = new System.Drawing.Point(861, 123);
             this.TB_Compiler.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_Compiler.Name = "TB_Compiler";
             this.TB_Compiler.Padding = new System.Windows.Forms.Padding(2);
@@ -409,7 +409,7 @@
             this.TB_Water.AutoWordSelection = true;
             this.TB_Water.FillColor = System.Drawing.Color.White;
             this.TB_Water.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.TB_Water.Location = new System.Drawing.Point(512, 362);
+            this.TB_Water.Location = new System.Drawing.Point(511, 406);
             this.TB_Water.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_Water.Name = "TB_Water";
             this.TB_Water.Padding = new System.Windows.Forms.Padding(2);
@@ -422,7 +422,7 @@
             // 
             this.BT_Compiler.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_Compiler.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.BT_Compiler.Location = new System.Drawing.Point(794, 76);
+            this.BT_Compiler.Location = new System.Drawing.Point(797, 128);
             this.BT_Compiler.Name = "BT_Compiler";
             this.BT_Compiler.Size = new System.Drawing.Size(57, 27);
             this.BT_Compiler.Style = Sunny.UI.UIStyle.Custom;
@@ -434,7 +434,7 @@
             // 
             this.BT_Water.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_Water.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.BT_Water.Location = new System.Drawing.Point(449, 367);
+            this.BT_Water.Location = new System.Drawing.Point(448, 411);
             this.BT_Water.Name = "BT_Water";
             this.BT_Water.Size = new System.Drawing.Size(57, 27);
             this.BT_Water.TabIndex = 75;
@@ -445,7 +445,7 @@
             // 
             this.uiLabel27.AutoSize = true;
             this.uiLabel27.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel27.Location = new System.Drawing.Point(714, 82);
+            this.uiLabel27.Location = new System.Drawing.Point(717, 134);
             this.uiLabel27.Name = "uiLabel27";
             this.uiLabel27.Size = new System.Drawing.Size(58, 21);
             this.uiLabel27.Style = Sunny.UI.UIStyle.Custom;
@@ -457,7 +457,7 @@
             // 
             this.uiLabel24.AutoSize = true;
             this.uiLabel24.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel24.Location = new System.Drawing.Point(377, 370);
+            this.uiLabel24.Location = new System.Drawing.Point(376, 414);
             this.uiLabel24.Name = "uiLabel24";
             this.uiLabel24.Size = new System.Drawing.Size(42, 21);
             this.uiLabel24.TabIndex = 76;
@@ -469,7 +469,7 @@
             this.TB_Wireless.AutoWordSelection = true;
             this.TB_Wireless.FillColor = System.Drawing.Color.White;
             this.TB_Wireless.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.TB_Wireless.Location = new System.Drawing.Point(513, 466);
+            this.TB_Wireless.Location = new System.Drawing.Point(861, 24);
             this.TB_Wireless.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_Wireless.Name = "TB_Wireless";
             this.TB_Wireless.Padding = new System.Windows.Forms.Padding(2);
@@ -483,7 +483,7 @@
             this.TB_Meteorological.AutoWordSelection = true;
             this.TB_Meteorological.FillColor = System.Drawing.Color.White;
             this.TB_Meteorological.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.TB_Meteorological.Location = new System.Drawing.Point(512, 309);
+            this.TB_Meteorological.Location = new System.Drawing.Point(511, 353);
             this.TB_Meteorological.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_Meteorological.Name = "TB_Meteorological";
             this.TB_Meteorological.Padding = new System.Windows.Forms.Padding(2);
@@ -496,7 +496,7 @@
             // 
             this.BT_Wireless.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_Wireless.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.BT_Wireless.Location = new System.Drawing.Point(449, 470);
+            this.BT_Wireless.Location = new System.Drawing.Point(797, 28);
             this.BT_Wireless.Name = "BT_Wireless";
             this.BT_Wireless.Size = new System.Drawing.Size(57, 27);
             this.BT_Wireless.Style = Sunny.UI.UIStyle.Custom;
@@ -508,7 +508,7 @@
             // 
             this.BT_Meteorological.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_Meteorological.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.BT_Meteorological.Location = new System.Drawing.Point(448, 311);
+            this.BT_Meteorological.Location = new System.Drawing.Point(447, 355);
             this.BT_Meteorological.Name = "BT_Meteorological";
             this.BT_Meteorological.Size = new System.Drawing.Size(57, 27);
             this.BT_Meteorological.TabIndex = 72;
@@ -519,7 +519,7 @@
             // 
             this.uiLabel28.AutoSize = true;
             this.uiLabel28.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel28.Location = new System.Drawing.Point(370, 476);
+            this.uiLabel28.Location = new System.Drawing.Point(718, 34);
             this.uiLabel28.Name = "uiLabel28";
             this.uiLabel28.Size = new System.Drawing.Size(74, 21);
             this.uiLabel28.Style = Sunny.UI.UIStyle.Custom;
@@ -531,7 +531,7 @@
             // 
             this.uiLabel23.AutoSize = true;
             this.uiLabel23.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel23.Location = new System.Drawing.Point(378, 313);
+            this.uiLabel23.Location = new System.Drawing.Point(377, 357);
             this.uiLabel23.Name = "uiLabel23";
             this.uiLabel23.Size = new System.Drawing.Size(42, 21);
             this.uiLabel23.TabIndex = 73;
@@ -543,7 +543,7 @@
             this.TB_TCband.AutoWordSelection = true;
             this.TB_TCband.FillColor = System.Drawing.Color.White;
             this.TB_TCband.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.TB_TCband.Location = new System.Drawing.Point(513, 416);
+            this.TB_TCband.Location = new System.Drawing.Point(512, 460);
             this.TB_TCband.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_TCband.Name = "TB_TCband";
             this.TB_TCband.Padding = new System.Windows.Forms.Padding(2);
@@ -557,7 +557,7 @@
             this.TB_Rain.AutoWordSelection = true;
             this.TB_Rain.FillColor = System.Drawing.Color.White;
             this.TB_Rain.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.TB_Rain.Location = new System.Drawing.Point(512, 255);
+            this.TB_Rain.Location = new System.Drawing.Point(511, 299);
             this.TB_Rain.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_Rain.Name = "TB_Rain";
             this.TB_Rain.Padding = new System.Windows.Forms.Padding(2);
@@ -570,7 +570,7 @@
             // 
             this.BT_TCband.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_TCband.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.BT_TCband.Location = new System.Drawing.Point(448, 421);
+            this.BT_TCband.Location = new System.Drawing.Point(447, 465);
             this.BT_TCband.Name = "BT_TCband";
             this.BT_TCband.Size = new System.Drawing.Size(57, 27);
             this.BT_TCband.Style = Sunny.UI.UIStyle.Custom;
@@ -582,7 +582,7 @@
             // 
             this.BT_Rain.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_Rain.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.BT_Rain.Location = new System.Drawing.Point(448, 262);
+            this.BT_Rain.Location = new System.Drawing.Point(447, 306);
             this.BT_Rain.Name = "BT_Rain";
             this.BT_Rain.Size = new System.Drawing.Size(57, 27);
             this.BT_Rain.TabIndex = 69;
@@ -593,7 +593,7 @@
             // 
             this.uiLabel29.AutoSize = true;
             this.uiLabel29.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel29.Location = new System.Drawing.Point(377, 426);
+            this.uiLabel29.Location = new System.Drawing.Point(376, 470);
             this.uiLabel29.Name = "uiLabel29";
             this.uiLabel29.Size = new System.Drawing.Size(58, 21);
             this.uiLabel29.Style = Sunny.UI.UIStyle.Custom;
@@ -605,7 +605,7 @@
             // 
             this.uiLabel22.AutoSize = true;
             this.uiLabel22.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel22.Location = new System.Drawing.Point(378, 267);
+            this.uiLabel22.Location = new System.Drawing.Point(377, 311);
             this.uiLabel22.Name = "uiLabel22";
             this.uiLabel22.Size = new System.Drawing.Size(42, 21);
             this.uiLabel22.TabIndex = 70;
@@ -617,7 +617,7 @@
             this.TB_TempControl.AutoWordSelection = true;
             this.TB_TempControl.FillColor = System.Drawing.Color.White;
             this.TB_TempControl.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.TB_TempControl.Location = new System.Drawing.Point(512, 164);
+            this.TB_TempControl.Location = new System.Drawing.Point(511, 208);
             this.TB_TempControl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_TempControl.Name = "TB_TempControl";
             this.TB_TempControl.Padding = new System.Windows.Forms.Padding(2);
@@ -631,7 +631,7 @@
             this.TB_Wind.AutoWordSelection = true;
             this.TB_Wind.FillColor = System.Drawing.Color.White;
             this.TB_Wind.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.TB_Wind.Location = new System.Drawing.Point(512, 208);
+            this.TB_Wind.Location = new System.Drawing.Point(511, 252);
             this.TB_Wind.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_Wind.Name = "TB_Wind";
             this.TB_Wind.Padding = new System.Windows.Forms.Padding(2);
@@ -644,7 +644,7 @@
             // 
             this.BT_TempControl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_TempControl.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.BT_TempControl.Location = new System.Drawing.Point(448, 167);
+            this.BT_TempControl.Location = new System.Drawing.Point(447, 211);
             this.BT_TempControl.Name = "BT_TempControl";
             this.BT_TempControl.Size = new System.Drawing.Size(57, 27);
             this.BT_TempControl.Style = Sunny.UI.UIStyle.Custom;
@@ -656,7 +656,7 @@
             // 
             this.BT_Wind.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_Wind.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.BT_Wind.Location = new System.Drawing.Point(448, 211);
+            this.BT_Wind.Location = new System.Drawing.Point(447, 255);
             this.BT_Wind.Name = "BT_Wind";
             this.BT_Wind.Size = new System.Drawing.Size(57, 27);
             this.BT_Wind.TabIndex = 66;
@@ -667,7 +667,7 @@
             // 
             this.uiLabel30.AutoSize = true;
             this.uiLabel30.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel30.Location = new System.Drawing.Point(376, 172);
+            this.uiLabel30.Location = new System.Drawing.Point(375, 216);
             this.uiLabel30.Name = "uiLabel30";
             this.uiLabel30.Size = new System.Drawing.Size(42, 21);
             this.uiLabel30.Style = Sunny.UI.UIStyle.Custom;
@@ -679,7 +679,7 @@
             // 
             this.uiLabel21.AutoSize = true;
             this.uiLabel21.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel21.Location = new System.Drawing.Point(370, 218);
+            this.uiLabel21.Location = new System.Drawing.Point(369, 262);
             this.uiLabel21.Name = "uiLabel21";
             this.uiLabel21.Size = new System.Drawing.Size(65, 21);
             this.uiLabel21.TabIndex = 67;
@@ -691,7 +691,7 @@
             this.TB_Sunshine.AutoWordSelection = true;
             this.TB_Sunshine.FillColor = System.Drawing.Color.White;
             this.TB_Sunshine.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.TB_Sunshine.Location = new System.Drawing.Point(512, 121);
+            this.TB_Sunshine.Location = new System.Drawing.Point(511, 165);
             this.TB_Sunshine.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_Sunshine.Name = "TB_Sunshine";
             this.TB_Sunshine.Padding = new System.Windows.Forms.Padding(2);
@@ -704,7 +704,7 @@
             // 
             this.BT_Sunshine.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_Sunshine.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.BT_Sunshine.Location = new System.Drawing.Point(448, 124);
+            this.BT_Sunshine.Location = new System.Drawing.Point(447, 168);
             this.BT_Sunshine.Name = "BT_Sunshine";
             this.BT_Sunshine.Size = new System.Drawing.Size(57, 27);
             this.BT_Sunshine.TabIndex = 63;
@@ -716,7 +716,7 @@
             this.TB_Tap.AutoWordSelection = true;
             this.TB_Tap.FillColor = System.Drawing.Color.White;
             this.TB_Tap.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.TB_Tap.Location = new System.Drawing.Point(513, 75);
+            this.TB_Tap.Location = new System.Drawing.Point(512, 119);
             this.TB_Tap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_Tap.Name = "TB_Tap";
             this.TB_Tap.Padding = new System.Windows.Forms.Padding(2);
@@ -729,7 +729,7 @@
             // 
             this.uiLabel20.AutoSize = true;
             this.uiLabel20.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel20.Location = new System.Drawing.Point(376, 128);
+            this.uiLabel20.Location = new System.Drawing.Point(375, 172);
             this.uiLabel20.Name = "uiLabel20";
             this.uiLabel20.Size = new System.Drawing.Size(42, 21);
             this.uiLabel20.TabIndex = 64;
@@ -740,7 +740,7 @@
             // 
             this.BT_Tap.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_Tap.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.BT_Tap.Location = new System.Drawing.Point(449, 82);
+            this.BT_Tap.Location = new System.Drawing.Point(448, 126);
             this.BT_Tap.Name = "BT_Tap";
             this.BT_Tap.Size = new System.Drawing.Size(57, 27);
             this.BT_Tap.Style = Sunny.UI.UIStyle.Custom;
@@ -753,7 +753,7 @@
             this.TB_Dirt.AutoWordSelection = true;
             this.TB_Dirt.FillColor = System.Drawing.Color.White;
             this.TB_Dirt.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.TB_Dirt.Location = new System.Drawing.Point(513, 26);
+            this.TB_Dirt.Location = new System.Drawing.Point(512, 70);
             this.TB_Dirt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_Dirt.Name = "TB_Dirt";
             this.TB_Dirt.Padding = new System.Windows.Forms.Padding(2);
@@ -766,7 +766,7 @@
             // 
             this.BT_Dirt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_Dirt.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.BT_Dirt.Location = new System.Drawing.Point(449, 31);
+            this.BT_Dirt.Location = new System.Drawing.Point(448, 74);
             this.BT_Dirt.Name = "BT_Dirt";
             this.BT_Dirt.Size = new System.Drawing.Size(57, 27);
             this.BT_Dirt.TabIndex = 61;
@@ -792,7 +792,7 @@
             this.TB_Air.AutoWordSelection = true;
             this.TB_Air.FillColor = System.Drawing.Color.White;
             this.TB_Air.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.TB_Air.Location = new System.Drawing.Point(166, 466);
+            this.TB_Air.Location = new System.Drawing.Point(512, 18);
             this.TB_Air.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_Air.Name = "TB_Air";
             this.TB_Air.Padding = new System.Windows.Forms.Padding(2);
@@ -805,7 +805,7 @@
             // 
             this.BT_Air.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_Air.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.BT_Air.Location = new System.Drawing.Point(98, 476);
+            this.BT_Air.Location = new System.Drawing.Point(445, 28);
             this.BT_Air.Name = "BT_Air";
             this.BT_Air.Size = new System.Drawing.Size(57, 27);
             this.BT_Air.TabIndex = 38;
@@ -816,7 +816,7 @@
             // 
             this.uiLabel18.AutoSize = true;
             this.uiLabel18.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel18.Location = new System.Drawing.Point(22, 482);
+            this.uiLabel18.Location = new System.Drawing.Point(377, 31);
             this.uiLabel18.Name = "uiLabel18";
             this.uiLabel18.Size = new System.Drawing.Size(42, 21);
             this.uiLabel18.TabIndex = 39;
@@ -828,7 +828,7 @@
             this.TB_Diff_Pressure.AutoWordSelection = true;
             this.TB_Diff_Pressure.FillColor = System.Drawing.Color.White;
             this.TB_Diff_Pressure.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.TB_Diff_Pressure.Location = new System.Drawing.Point(166, 420);
+            this.TB_Diff_Pressure.Location = new System.Drawing.Point(168, 413);
             this.TB_Diff_Pressure.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_Diff_Pressure.Name = "TB_Diff_Pressure";
             this.TB_Diff_Pressure.Padding = new System.Windows.Forms.Padding(2);
@@ -841,7 +841,7 @@
             // 
             this.BT_Diff_Pressure.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_Diff_Pressure.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.BT_Diff_Pressure.Location = new System.Drawing.Point(98, 426);
+            this.BT_Diff_Pressure.Location = new System.Drawing.Point(100, 419);
             this.BT_Diff_Pressure.Name = "BT_Diff_Pressure";
             this.BT_Diff_Pressure.Size = new System.Drawing.Size(57, 27);
             this.BT_Diff_Pressure.TabIndex = 35;
@@ -852,7 +852,7 @@
             // 
             this.uiLabel17.AutoSize = true;
             this.uiLabel17.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel17.Location = new System.Drawing.Point(22, 430);
+            this.uiLabel17.Location = new System.Drawing.Point(24, 423);
             this.uiLabel17.Name = "uiLabel17";
             this.uiLabel17.Size = new System.Drawing.Size(42, 21);
             this.uiLabel17.TabIndex = 36;
@@ -864,7 +864,7 @@
             this.TB_Pressure.AutoWordSelection = true;
             this.TB_Pressure.FillColor = System.Drawing.Color.White;
             this.TB_Pressure.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.TB_Pressure.Location = new System.Drawing.Point(166, 368);
+            this.TB_Pressure.Location = new System.Drawing.Point(168, 361);
             this.TB_Pressure.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_Pressure.Name = "TB_Pressure";
             this.TB_Pressure.Padding = new System.Windows.Forms.Padding(2);
@@ -877,7 +877,7 @@
             // 
             this.BT_Pressure.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_Pressure.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.BT_Pressure.Location = new System.Drawing.Point(100, 373);
+            this.BT_Pressure.Location = new System.Drawing.Point(102, 366);
             this.BT_Pressure.Name = "BT_Pressure";
             this.BT_Pressure.Size = new System.Drawing.Size(57, 27);
             this.BT_Pressure.TabIndex = 32;
@@ -888,7 +888,7 @@
             // 
             this.uiLabel16.AutoSize = true;
             this.uiLabel16.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel16.Location = new System.Drawing.Point(22, 379);
+            this.uiLabel16.Location = new System.Drawing.Point(24, 372);
             this.uiLabel16.Name = "uiLabel16";
             this.uiLabel16.Size = new System.Drawing.Size(42, 21);
             this.uiLabel16.TabIndex = 33;
@@ -900,7 +900,7 @@
             this.TB_infrared.AutoWordSelection = true;
             this.TB_infrared.FillColor = System.Drawing.Color.White;
             this.TB_infrared.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.TB_infrared.Location = new System.Drawing.Point(166, 318);
+            this.TB_infrared.Location = new System.Drawing.Point(168, 311);
             this.TB_infrared.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_infrared.Name = "TB_infrared";
             this.TB_infrared.Padding = new System.Windows.Forms.Padding(2);
@@ -913,7 +913,7 @@
             // 
             this.BT_infrared.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_infrared.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.BT_infrared.Location = new System.Drawing.Point(100, 321);
+            this.BT_infrared.Location = new System.Drawing.Point(102, 314);
             this.BT_infrared.Name = "BT_infrared";
             this.BT_infrared.Size = new System.Drawing.Size(57, 27);
             this.BT_infrared.TabIndex = 29;
@@ -924,7 +924,7 @@
             // 
             this.uiLabel15.AutoSize = true;
             this.uiLabel15.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiLabel15.Location = new System.Drawing.Point(11, 327);
+            this.uiLabel15.Location = new System.Drawing.Point(13, 320);
             this.uiLabel15.Name = "uiLabel15";
             this.uiLabel15.Size = new System.Drawing.Size(58, 21);
             this.uiLabel15.TabIndex = 30;

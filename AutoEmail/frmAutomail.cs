@@ -1,4 +1,5 @@
 ﻿using My;
+using Sunny.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,11 +20,13 @@ namespace AutoEmail
         EmailSend mail;
         string tempaskinfo;
         bool Startload = true;
+        SetEDM EDM;
         public frmAutomail()
         {
             InitializeComponent();
+            MDIParent.LoadSystemINI();
             initUI();
-         
+            
         }
         private void initUI()
         {
@@ -31,17 +34,18 @@ namespace AutoEmail
             dtp_end.Text = Mail_Config.MailEndDate;
             CB_situation.Items.Add("全部"); CB_situation.Items.Add("尚未處理"); CB_situation.Items.Add("處理中");
             CB_situation.Items.Add("已報價"); CB_situation.Items.Add("未成交"); CB_situation.Items.Add("已成交");
-            List<String> ProType = new List<string> {"全部", "大型顯示器", "空氣品質", "流量-AICHI","流量-RGL","流量-Siargo",
-            "流量-其他","記錄器","資料收集器-JETEC","資料收集器-其他","溫濕-JETEC","溫濕-GALLTEC"
-            ,"溫濕-E+E","溫濕-其他","紅外線","壓力-JETEC","壓力-HUBA","壓力-COPAL","壓力-其他","差壓"
-            ,"氣體-JETEC","氣體-Senko","氣體-GASDNA","氣體-手持","氣體-其他","氣象儀器-土壤/pH","氣象儀器-日照/紫外線"
-            ,"氣象儀器-風速/風向","氣象儀器-雨量","氣象儀器-其他","水質相關"
-            ,"液位/料位-Jetec","液位/料位-DINEL","液位/料位-HONDA","液位/料位-其他","溫度貼紙",
+            List<String> ProType = new List<string> {"全部", "大型顯示器", "空氣品質", "流量",
+            "記錄器","資料收集器","溫濕","紅外線","壓力","差壓"
+            ,"氣體","氣象儀器-土壤/pH","氣象儀器-日照/紫外線"
+            ,"氣象儀器-風速/風向","氣象儀器-雨量","氣象儀器-其他","水質"
+            ,"液位/料位","溫度貼紙",
             "溫控器","感溫線棒","無線傳輸","編碼器/電位計","能源管理控制","食品","其它"};
             CB_product_type.DataSource=(ProType);
             CB_product_type.SelectedItem = Mail_Config.ProductType;
             CB_situation.Text = Mail_Config.CustSituation;
-
+            CB_EDM.DataSource = (ProType);
+            CB_EDM.SelectedIndex = 0;
+            
             // 使用BackgroundWorker時不能在工作執行緒中訪問UI執行緒部分，
             // 即你不能在BackgroundWorker的事件和方法中操作UI，否則會拋跨執行緒操作無效的異常
             // 新增下列語句可以避免異常。
@@ -55,6 +59,7 @@ namespace AutoEmail
 
             mail = new EmailSend(Mail_Config.MailUserName, Mail_Config.SendAddress, Mail_Config.MailPassword);
         }
+
        
 
         private void Btn_sendget_Click(object sender, EventArgs e)
@@ -62,7 +67,7 @@ namespace AutoEmail
             
             if (Startload)
             {
-                System.IO.StreamReader reader = new System.IO.StreamReader(webView.DocumentStream, Encoding.GetEncoding("BIG5"));
+                System.IO.StreamReader reader = new System.IO.StreamReader(webView.DocumentStream, Encoding.GetEncoding("UTF-8"));
                 Mailbody = reader.ReadToEnd();
                 Startload = false;
             }
@@ -137,7 +142,7 @@ namespace AutoEmail
             Mail_Config.MailStartDate = dtp_start.Text;
             Mail_Config.MailEndDate = dtp_end.Text;
 
-            // 設定INI SET值
+            //// 設定INI SET值
             string filePath = System.Windows.Forms.Application.StartupPath + "\\System.ini";
 
             MyINI myINI = new MyINI(filePath);
@@ -145,7 +150,7 @@ namespace AutoEmail
             myINI.setKeyValue("LastMailConfig", "ProductType", Mail_Config.ProductType);
             myINI.setKeyValue("LastMailConfig", "MailStartDate", Mail_Config.MailStartDate);
             myINI.setKeyValue("LastMailConfig", "MailEndDate", Mail_Config.MailEndDate);
-
+            
         }
 
         private void dgv_commail_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -208,9 +213,9 @@ namespace AutoEmail
                 case "氣象儀器-雨量": return "雨量偵測器";
                 case "氣象儀器-其他": return "氣象監測相關儀器";
                 case "水質相關": return "水質相關測量儀器";
-                case "液位/料位-JETEC": return "液位/料位-Jetec";
-                case "液位/料位-DINEL": return "液位/料位-DINEL傳感器";
-                case "水液位/料位-HONDA": return "液位/料位-HONDA";
+                case "液位/料位-JETEC": return "液位/料位傳感器(Jetec)";
+                case "液位/料位-DINEL": return "液位/料位傳感器(DINEL)";
+                case "水液位/料位-HONDA": return "液位/料位傳感器(HONDA)";
                 case "液位/料位-其他": return "液位/料位傳感器";
                 case "溫度貼紙": return "溫度貼紙";
                 case "溫控器-TOHO": return "溫控器";
@@ -272,22 +277,7 @@ namespace AutoEmail
             }
         }
 
-      
-
-        private void uiButton1_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog dialog = new OpenFileDialog();
-            dialog.Title = "Select file";
-            dialog.InitialDirectory = ".\\";
-            dialog.Filter = "files (*.*)|";
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                TB_filepath.Text= dialog.FileName;
-                mail.attachmentPath = TB_filepath.Text;
-            }
-        }
-
-      
+     
         private void dgv_commail_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Down)
@@ -323,9 +313,6 @@ namespace AutoEmail
                 }
             }
         }
-
-   
-
         private void uiButton2_Click(object sender, EventArgs e)
         {
             int Rowselect = dgv_commail.CurrentRow.Index;
@@ -351,6 +338,32 @@ namespace AutoEmail
                 dgv_commail.Select();
             }
         }
+
+        private void uiButton1_Click(object sender, EventArgs e)
+        {
+            //預計大量設定EDM用
+
+            SetEDM EDM = new SetEDM();
+            EDM.Show();
+            EDM.Closed += new EventHandler(EDM_Win_Closed);
+
+        }
+        private void EDM_Win_Closed(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void CB_EDM_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!TB_filepath.Text.Equals(""))
+            {
+                string filename;
+                //TB_filepath.Text.Split('\')
+                //= CB_EDM.Text
+            }
+            
+        }
     }
     static class Mail_Config
     {
@@ -373,11 +386,35 @@ namespace AutoEmail
         public static int    SmtpPort;
         public static string Bodypath;
         public static List<string> MailBody;
-
-        
-
         #endregion
+        #region 各項類別EDM預設
 
+        public static string LargeMonitor;
+        public static string AirQC;
+        public static string Flow;
+        public static string Recordor;
+        public static string Collector;
+        public static string EE;
+        public static string infrared;
+        public static string Pressure;
+        public static string Diff_Pressure;
+        public static string Air;
+        public static string Dirt;
+        public static string Sunshine;
+        public static string Wind;
+        public static string Rain;
+        public static string Meteorological;
+        public static string Water;
+        public static string Liquid;
+        public static string Tap;
+        public static string TempControl;
+        public static string TCband;
+        public static string Wireless;
+        public static string Compiler;
+        public static string SourceControl;
+        public static string Food;
+        public static string Other;
+        #endregion
     }
 
 

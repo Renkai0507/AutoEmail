@@ -14,7 +14,7 @@ namespace AutoEmail
             LoadSystemINI();
             ShowAutomail();
         }
-        public void LoadSystemINI()
+        public static void LoadSystemINI()
         {
 
             string filePath = System.Windows.Forms.Application.StartupPath + "\\System.ini";
@@ -38,13 +38,41 @@ namespace AutoEmail
                 ///
                 ///信件內容載入List<string>
                 ///List第一 第三位置是日期和產品
-                Mail_Config.MailBody = new System.Collections.Generic.List<string> { };
-                Mail_Config.MailBody.Add(myINI.getKeyValue("MailBody", "msg1"));
-                Mail_Config.MailBody.Add(myINI.getKeyValue("MailBody", "msgdate"));
-                Mail_Config.MailBody.Add(myINI.getKeyValue("MailBody", "msg2")); Mail_Config.MailBody.Add(myINI.getKeyValue("MailBody", "msgtype"));
-                Mail_Config.MailBody.Add(myINI.getKeyValue("MailBody", "msg3")); Mail_Config.MailBody.Add(myINI.getKeyValue("MailBody", "msg4"));
-                Mail_Config.MailBody.Add(myINI.getKeyValue("MailBody", "msg5")); Mail_Config.MailBody.Add(myINI.getKeyValue("MailBody", "msg6"));
-                Mail_Config.MailBody.Add(myINI.getKeyValue("MailBody", "msg7")); Mail_Config.MailBody.Add(myINI.getKeyValue("MailBody", "msg8"));
+                //Mail_Config.MailBody = new System.Collections.Generic.List<string> { };
+                //Mail_Config.MailBody.Add(myINI.getKeyValue("MailBody", "msg1"));
+                //Mail_Config.MailBody.Add(myINI.getKeyValue("MailBody", "msgdate"));
+                //Mail_Config.MailBody.Add(myINI.getKeyValue("MailBody", "msg2")); Mail_Config.MailBody.Add(myINI.getKeyValue("MailBody", "msgtype"));
+                //Mail_Config.MailBody.Add(myINI.getKeyValue("MailBody", "msg3")); Mail_Config.MailBody.Add(myINI.getKeyValue("MailBody", "msg4"));
+                //Mail_Config.MailBody.Add(myINI.getKeyValue("MailBody", "msg5")); Mail_Config.MailBody.Add(myINI.getKeyValue("MailBody", "msg6"));
+                //Mail_Config.MailBody.Add(myINI.getKeyValue("MailBody", "msg7")); Mail_Config.MailBody.Add(myINI.getKeyValue("MailBody", "msg8"));
+                
+                ///各項EDM路徑紀錄
+                
+                Mail_Config.LargeMonitor = myINI.getKeyValue("Product_EDM","LargeMonitor");
+                Mail_Config.AirQC = myINI.getKeyValue("Product_EDM", "AirQC");
+                Mail_Config.Flow = myINI.getKeyValue("Product_EDM", "Flow");
+                Mail_Config.Recordor = myINI.getKeyValue("Product_EDM", "Recordor");
+                Mail_Config.Collector = myINI.getKeyValue("Product_EDM", "Collector");
+                Mail_Config.EE = myINI.getKeyValue("Product_EDM", "EE");
+                Mail_Config.infrared = myINI.getKeyValue("Product_EDM", "infrared");
+                Mail_Config.Pressure = myINI.getKeyValue("Product_EDM", "Pressure");
+                Mail_Config.Diff_Pressure = myINI.getKeyValue("Product_EDM", "Diff_Pressure");
+                Mail_Config.Air = myINI.getKeyValue("Product_EDM", "Air");
+                Mail_Config.Dirt = myINI.getKeyValue("Product_EDM", "Dirt");
+                Mail_Config.Sunshine = myINI.getKeyValue("Product_EDM", "Sunshine");
+                Mail_Config.Wind = myINI.getKeyValue("Product_EDM", "Wind");
+                Mail_Config.Rain = myINI.getKeyValue("Product_EDM", "Rain");
+                Mail_Config.Meteorological = myINI.getKeyValue("Product_EDM", "Meteorological");
+                Mail_Config.Water = myINI.getKeyValue("Product_EDM", "Water");
+                Mail_Config.Liquid = myINI.getKeyValue("Product_EDM", "Liquid");
+                Mail_Config.Tap = myINI.getKeyValue("Product_EDM", "Tap");
+                Mail_Config.TempControl = myINI.getKeyValue("Product_EDM", "TempControl");
+                Mail_Config.TCband = myINI.getKeyValue("Product_EDM", "TCband");
+                Mail_Config.Wireless = myINI.getKeyValue("Product_EDM", "Wireless");
+                Mail_Config.Compiler = myINI.getKeyValue("Product_EDM", "Compiler");
+                Mail_Config.SourceControl = myINI.getKeyValue("Product_EDM", "SourceControl");
+                Mail_Config.Food = myINI.getKeyValue("Product_EDM", "Food");
+                Mail_Config.Other = myINI.getKeyValue("Product_EDM", "Other");
 
             }
             else

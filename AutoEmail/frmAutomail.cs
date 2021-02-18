@@ -76,7 +76,7 @@ namespace AutoEmail
                 Startload = false;
             }
             string strGet;
-            string strcheck=CB_situation.Text;
+            string strcheck=CB_situation.Text.Equals("全部")?"":CB_situation.Text;
             string strStart = dtp_start.Text;
             string strend = dtp_end.Text;
             string strproduct = CB_product_type.Text.Equals("全部") ? "" : CB_product_type.Text;
@@ -144,6 +144,7 @@ namespace AutoEmail
             Mail_Config.CustSituation = CB_situation.Text;
             Mail_Config.ProductType = CB_product_type.Text;
             Mail_Config.MailStartDate = dtp_start.Text;
+            //Mail_Config.Custtype = CB_attribute.Text;
             Mail_Config.MailEndDate = dtp_end.Text;
 
             //// 設定INI SET值
@@ -152,6 +153,7 @@ namespace AutoEmail
             MyINI myINI = new MyINI(filePath);
             myINI.setKeyValue("LastMailConfig", "CustSituation", Mail_Config.CustSituation);
             myINI.setKeyValue("LastMailConfig", "ProductType", Mail_Config.ProductType);
+            myINI.setKeyValue("LastMailConfig", "MailStartDate", Mail_Config.MailStartDate);
             myINI.setKeyValue("LastMailConfig", "MailStartDate", Mail_Config.MailStartDate);
             myINI.setKeyValue("LastMailConfig", "MailEndDate", Mail_Config.MailEndDate);
             
@@ -360,11 +362,11 @@ namespace AutoEmail
 
         private void CB_EDM_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (!TB_filepath.Text.Equals(""))
+            if (!CB_EDM.Text.Equals(""))
             {
                 TB_filepath.Text=GetEDMFileName(CB_EDM.Text);
                 string filename;
-                filename = TB_filepath.Text.Split('/')[TB_filepath.Text.Split('/').Length-1];
+                filename = TB_filepath.Text.Split(@"\")[TB_filepath.Text.Split(@"\").Length-1];
                 filename = filename.Split('.')[0];
                 TB_filepath.Text = filename;
             }
@@ -427,6 +429,7 @@ namespace AutoEmail
         public static int    SmtpPort;
         public static string Bodypath;
         public static List<string> MailBody;
+        public static string Custtype;
         #endregion
         #region 各項類別EDM預設
 

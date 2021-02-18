@@ -12,7 +12,7 @@ namespace AutoEmail
         {
             InitializeComponent();
             LoadSystemINI();
-            ShowAutomail();
+            
         }
         public static void LoadSystemINI()
         {
@@ -27,6 +27,7 @@ namespace AutoEmail
                 Mail_Config.CustSituation = myINI.getKeyValue("LastMailConfig", "CustSituation");
                 Mail_Config.ProductType = myINI.getKeyValue("LastMailConfig", "ProductType");
                 Mail_Config.MailStartDate = myINI.getKeyValue("LastMailConfig", "MailStartDate");
+                Mail_Config.Custtype = myINI.getKeyValue("LastMailConfig", "Custtype");
                 Mail_Config.MailEndDate = myINI.getKeyValue("LastMailConfig", "MailEndDate");
                 Mail_Config.SendAddress = myINI.getKeyValue("SendMailConfig", "SendAddress");
                 Mail_Config.MailUserName = myINI.getKeyValue("SendMailConfig", "MailUserName");
@@ -112,6 +113,19 @@ namespace AutoEmail
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ShowAutomail();
+        }
+
+        private void 下載客戶信箱轉EXCELToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (IsShowChildForm("frmAutomail"))
+            {
+                frmQuestList FRAM = new frmQuestList();
+                FRAM.MdiParent = this;
+                FRAM.StartPosition = FormStartPosition.CenterScreen;
+                FRAM.Show();
+
+                //AddNewTab(FRFC); //Test TabControl
+            }
         }
     }
 }

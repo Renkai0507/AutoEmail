@@ -36,6 +36,7 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.下載客戶信箱轉EXCELToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +55,8 @@
             // fileMenu
             // 
             this.fileMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newToolStripMenuItem});
+            this.newToolStripMenuItem,
+            this.下載客戶信箱轉EXCELToolStripMenuItem});
             this.fileMenu.ImageTransparentColor = System.Drawing.SystemColors.ActiveBorder;
             this.fileMenu.Name = "fileMenu";
             this.fileMenu.Size = new System.Drawing.Size(85, 24);
@@ -66,7 +68,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F1)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(239, 24);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(322, 24);
             this.newToolStripMenuItem.Text = "自動追蹤信件";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
@@ -85,6 +87,14 @@
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
             this.toolStripStatusLabel.Size = new System.Drawing.Size(32, 17);
             this.toolStripStatusLabel.Text = "狀態";
+            // 
+            // 下載客戶信箱轉EXCELToolStripMenuItem
+            // 
+            this.下載客戶信箱轉EXCELToolStripMenuItem.Name = "下載客戶信箱轉EXCELToolStripMenuItem";
+            this.下載客戶信箱轉EXCELToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F2)));
+            this.下載客戶信箱轉EXCELToolStripMenuItem.Size = new System.Drawing.Size(322, 24);
+            this.下載客戶信箱轉EXCELToolStripMenuItem.Text = "EDM意願調查&匯出EXCEL";
+            this.下載客戶信箱轉EXCELToolStripMenuItem.Click += new System.EventHandler(this.下載客戶信箱轉EXCELToolStripMenuItem_Click);
             // 
             // MDIParent
             // 
@@ -115,6 +125,7 @@
         private System.Windows.Forms.ToolStripMenuItem fileMenu;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
         private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.ToolStripMenuItem 下載客戶信箱轉EXCELToolStripMenuItem;
     }
 }
 
